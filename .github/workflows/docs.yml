@@ -1,0 +1,11 @@
+name: Build Docs
+
+on: [push]
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build docs (placeholder)
+      run: echo "Build docs step"
