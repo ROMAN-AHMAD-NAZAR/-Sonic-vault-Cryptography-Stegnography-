@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SonicVault - Secure Audio Steganography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>SonicVault</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#themes">Themes</a></li>
+                <li><a href="#docs">Docs</a></li>
+            </ul>
+            <a href="https://github.com/ROMAN-AHMAD-NAZAR/-Sonic-vault-Cryptography-Stegnography-" target="_blank" class="github-btn">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-lock"></i>
+                <span>Military-Grade Encryption</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Sonic</span>Vault
+            </h1>
+            <p class="hero-subtitle">Secure Audio Steganography</p>
+            <p class="hero-description">
+                Hide encrypted messages in ambient audio soundscapes. 
+                Combining <strong>AES-256 cryptography</strong> with <strong>audio steganography</strong> 
+                for covert communication.
+            </p>
+            <div class="hero-buttons">
+                <a href="#demo" class="btn btn-primary">
+                    <i class="fas fa-play"></i>
+                    Try Demo
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <i class="fas fa-info-circle"></i>
+                    Learn More
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">256</span>
+                    <span class="stat-label">Bit Encryption</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Audio Themes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Open Source</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="audio-visualizer">
+                <div class="visualizer-ring ring1"></div>
+                <div class="visualizer-ring ring2"></div>
+                <div class="visualizer-ring ring3"></div>
+                <div class="visualizer-core">
+                    <i class="fas fa-wave-square"></i>
+                </div>
+                <div class="sound-bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">Powerful Security Features</h2>
+                <p class="section-subtitle">Everything you need for secure covert communication</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>AES-256 Encryption</h3>
+                    <p>Military-grade encryption standard used by governments worldwide. Your messages are protected with the highest level of security.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-signature"></i>
+                    </div>
+                    <h3>DSA Digital Signatures</h3>
+                    <p>Verify message authenticity and integrity with cryptographic signatures. Ensure messages haven't been tampered with.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Multiple Audio Themes</h3>
+                    <p>Hide messages in various soundscapes - rain, birds, synth tones, and more. Choose the perfect cover for your hidden message.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3>Morse Code Encoding</h3>
+                    <p>Robust timing-based communication using Morse code patterns embedded in audio frequencies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Key Management</h3>
+                    <p>Secure key generation, storage, and handling. Generate RSA key pairs with password protection.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-audio"></i>
+                    </div>
+                    <h3>Standard WAV Export</h3>
+                    <p>Export to industry-standard WAV audio format. Compatible with all audio players and platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Interactive Demo</span>
+                <h2 class="section-title">Try It Yourself</h2>
+                <p class="section-subtitle">Experience the power of audio steganography</p>
+            </div>
+            
+            <div class="demo-container">
+                <!-- Mode Tabs -->
+                <div class="demo-tabs">
+                    <button class="tab-btn active" data-tab="encode">
+                        <i class="fas fa-lock"></i>
+                        Encode Message
+                    </button>
+                    <button class="tab-btn" data-tab="decode">
+                        <i class="fas fa-unlock"></i>
+                        Decode Message
+                    </button>
+                    <button class="tab-btn" data-tab="keys">
+                        <i class="fas fa-key"></i>
+                        Generate Keys
+                    </button>
+                </div>
+
+                <!-- Encode Panel -->
+                <div class="demo-panel active" id="encode-panel">
+                    <div class="panel-content">
+                        <div class="input-group">
+                            <label for="encodeMessage">
+                                <i class="fas fa-message"></i>
+                                Secret Message
+                            </label>
+                            <textarea id="encodeMessage" placeholder="Enter your secret message here..." rows="4"></textarea>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="encodePassword">
+                                    <i class="fas fa-lock"></i>
+                                    Password
+                                </label>
+                                <input type="password" id="encodePassword" placeholder="Enter encryption password">
+                            </div>
+                            <div class="input-group">
+                                <label for="encodeTheme">
+                                    <i class="fas fa-palette"></i>
+                                    Audio Theme
+                                </label>
+                                <select id="encodeTheme">
+                                    <option value="sine">🎵 Sine Wave</option>
+                                    <option value="rain">🌧️ Rain Drops</option>
+                                    <option value="birds">🐦 Bird Chirps</option>
+                                    <option value="synth">🎹 Synth Tones</option>
+                                    <option value="digital">💻 Digital Beeps</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="addSignature">
+                                <span class="checkmark"></span>
+                                Add Digital Signature
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-block" id="encodeBtn">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                            Encode Message
+                        </button>
+                    </div>
+                    <div class="panel-output" id="encodeOutput">
+                        <div class="output-placeholder">
+                            <i class="fas fa-file-audio"></i>
+                            <p>Encoded audio will appear here</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decode Panel -->
+                <div class="demo-panel" id="decode-panel">
+                    <div class="panel-content">
+                        <div class="input-group">
+                            <label for="decodeFile">
+                                <i class="fas fa-file-upload"></i>
+                                Audio File
+                            </label>
+                            <div class="file-upload">
+                                <input type="file" id="decodeFile" accept=".wav">
+                                <div class="file-upload-label">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <span>Drop audio file here or click to browse</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="decodePassword">
+                                <i class="fas fa-lock"></i>
+                                Password
+                            </label>
+                            <input type="password" id="decodePassword" placeholder="Enter decryption password">
+                        </div>
+                        <button class="btn btn-primary btn-block" id="decodeBtn">
+                            <i class="fas fa-unlock"></i>
+                            Decode Message
+                        </button>
+                    </div>
+                    <div class="panel-output" id="decodeOutput">
+                        <div class="output-placeholder">
+                            <i class="fas fa-message"></i>
+                            <p>Decoded message will appear here</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keys Panel -->
+                <div class="demo-panel" id="keys-panel">
+                    <div class="panel-content">
+                        <div class="input-group">
+                            <label for="keyName">
+                                <i class="fas fa-tag"></i>
+                                Key Name
+                            </label>
+                            <input type="text" id="keyName" placeholder="my_secure_keys" value="sonic_vault_keys">
+                        </div>
+                        <div class="input-group">
+                            <label for="keyPassword">
+                                <i class="fas fa-lock"></i>
+                                Key Password (Optional)
+                            </label>
+                            <input type="password" id="keyPassword" placeholder="Password to protect private key">
+                        </div>
+                        <button class="btn btn-primary btn-block" id="generateKeysBtn">
+                            <i class="fas fa-key"></i>
+                            Generate Key Pair
+                        </button>
+                    </div>
+                    <div class="panel-output" id="keysOutput">
+                        <div class="output-placeholder">
+                            <i class="fas fa-key"></i>
+                            <p>Generated keys will appear here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-note">
+                <i class="fas fa-info-circle"></i>
+                <p>This is a frontend demonstration. For full functionality, run the Python CLI locally.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Themes Section -->
+    <section id="themes" class="themes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Audio Themes</span>
+                <h2 class="section-title">Choose Your Soundscape</h2>
+                <p class="section-subtitle">Hide messages in beautiful ambient audio</p>
+            </div>
+            <div class="themes-grid">
+                <div class="theme-card" data-theme="sine">
+                    <div class="theme-visual sine-visual">
+                        <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                            <path class="sine-wave" d="M0,25 Q25,0 50,25 T100,25" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="theme-info">
+                        <h3><i class="fas fa-wave-square"></i> Sine Wave</h3>
+                        <p>Clean, pure tones perfect for precise encoding</p>
+                    </div>
+                </div>
+                <div class="theme-card" data-theme="rain">
+                    <div class="theme-visual rain-visual">
+                        <div class="rain-drops">
+                            <div class="drop"></div>
+                            <div class="drop"></div>
+                            <div class="drop"></div>
+                            <div class="drop"></div>
+                            <div class="drop"></div>
+                        </div>
+                    </div>
+                    <div class="theme-info">
+                        <h3><i class="fas fa-cloud-rain"></i> Rain Drops</h3>
+                        <p>Soothing rain sounds for natural cover</p>
+                    </div>
+                </div>
+                <div class="theme-card" data-theme="birds">
+                    <div class="theme-visual birds-visual">
+                        <i class="fas fa-dove"></i>
+                    </div>
+                    <div class="theme-info">
+                        <h3><i class="fas fa-feather-alt"></i> Bird Chirps</h3>
+                        <p>Organic bird sounds for outdoor ambiance</p>
+                    </div>
+                </div>
+                <div class="theme-card" data-theme="synth">
+                    <div class="theme-visual synth-visual">
+                        <div class="synth-bars">
+                            <div class="synth-bar"></div>
+                            <div class="synth-bar"></div>
+                            <div class="synth-bar"></div>
+                            <div class="synth-bar"></div>
+                            <div class="synth-bar"></div>
+                        </div>
+                    </div>
+                    <div class="theme-info">
+                        <h3><i class="fas fa-keyboard"></i> Synth Tones</h3>
+                        <p>Electronic synthesizer sounds</p>
+                    </div>
+                </div>
+                <div class="theme-card" data-theme="digital">
+                    <div class="theme-visual digital-visual">
+                        <div class="binary-text">01101001</div>
+                    </div>
+                    <div class="theme-info">
+                        <h3><i class="fas fa-microchip"></i> Digital Beeps</h3>
+                        <p>Computer-style digital sound effects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Process</span>
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Three simple steps to secure communication</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-pen-to-square"></i>
+                    </div>
+                    <h3>Write Your Message</h3>
+                    <p>Enter your secret message and choose a strong password for encryption.</p>
+                </div>
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>Encode to Audio</h3>
+                    <p>SonicVault encrypts and embeds your message into an audio file.</p>
+                </div>
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-share-nodes"></i>
+                    </div>
+                    <h3>Share Securely</h3>
+                    <p>Send the audio file. Only recipients with the password can decode it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="docs" class="installation">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get Started</span>
+                <h2 class="section-title">Installation</h2>
+                <p class="section-subtitle">Set up SonicVault in minutes</p>
+            </div>
+            <div class="install-card">
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-title">Terminal</span>
+                        <button class="copy-btn" onclick="copyCode(this)">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                    <pre><code><span class="comment"># Clone the repository</span>
+git clone https://github.com/ROMAN-AHMAD-NAZAR/-Sonic-vault-Cryptography-Stegnography-.git
+cd -Sonic-vault-Cryptography-Stegnography-
+
+<span class="comment"># Install dependencies</span>
+pip install -r requirements.txt
+
+<span class="comment"># Encode a secret message</span>
+python cli.py encode "Your secret message" output.wav --password YourPassword --theme rain
+
+<span class="comment"># Decode the message</span>
+python cli.py decode output.wav --password YourPassword</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Secure Your Communications?</h2>
+                <p>Start hiding your messages in audio today. Free, open-source, and secure.</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/ROMAN-AHMAD-NAZAR/-Sonic-vault-Cryptography-Stegnography-" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                    <a href="https://github.com/ROMAN-AHMAD-NAZAR/-Sonic-vault-Cryptography-Stegnography-/archive/refs/heads/main.zip" class="btn btn-secondary">
+                        <i class="fas fa-download"></i>
+                        Download ZIP
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>SonicVault</span>
+                    </a>
+                    <p>Secure Audio Steganography System</p>
+                    <p>Cryptography + Steganography</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Documentation</h4>
+                        <ul>
+                            <li><a href="#">Installation Guide</a></li>
+                            <li><a href="#">CLI Reference</a></li>
+                            <li><a href="#">API Documentation</a></li>
+                            <li><a href="#">Security Analysis</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Project</h4>
+                        <ul>
+                            <li><a href="https://github.com/ROMAN-AHMAD-NAZAR/-Sonic-vault-Cryptography-Stegnography-">GitHub</a></li>
+                            <li><a href="https://github.com/ROMAN-AHMAD-NAZAR/-Sonic-vault-Cryptography-Stegnography-/issues">Issues</a></li>
+                            <li><a href="https://github.com/ROMAN-AHMAD-NAZAR/-Sonic-vault-Cryptography-Stegnography-/blob/main/LICENSE">License</a></li>
+                            <li><a href="#">Contributing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://github.com/ROMAN-AHMAD-NAZAR"><i class="fab fa-github"></i> GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SonicVault by ROMAN AHMAD NAZAR. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i> for secure communication</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
